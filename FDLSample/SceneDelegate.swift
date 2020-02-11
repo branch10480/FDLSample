@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDynamicLinks
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -47,7 +48,29 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
+    
+    static func handleIncomingDynamicLink(_ dynamicLink: DynamicLink) {
+        guard let url = dynamicLink.url else {
+            print("That's a weird. My dynamic link object has no url.")
+            return
+        }
+        print("Your dynamic link url is \(url.absoluteString)")
+    }
 
+    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+        if let incomingURL = userActivity.webpageURL {
+            print("Incoming url is \(incomingURL)")
+            DynamicLinks.dynamicLinks().handleUniversalLink(incomingURL) { (link, error) in
+                guard error == nil else {
+                    print("Found an error! \(error!.localizedDescription)")
+                    return
+                }
+                if let dynamicLink = link {
+                    SceneDelegate.handleIncomingDynamicLink(dynamicLink)
+                }
+            }
+        }
+    }
 
 }
 

@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		448CE5EA09339FAA15FCB838 /* Pods_FDLSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6852102D37BFD9DBEF7B158C /* Pods_FDLSample.framework */; };
 		49C2550423F26C6A00B6A3AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C2550323F26C6A00B6A3AD /* AppDelegate.swift */; };
 		49C2550623F26C6A00B6A3AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C2550523F26C6A00B6A3AD /* SceneDelegate.swift */; };
 		49C2550823F26C6A00B6A3AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C2550723F26C6A00B6A3AD /* ViewController.swift */; };
 		49C2550B23F26C6A00B6A3AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C2550923F26C6A00B6A3AD /* Main.storyboard */; };
 		49C2550D23F26C6C00B6A3AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C2550C23F26C6C00B6A3AD /* Assets.xcassets */; };
 		49C2551023F26C6C00B6A3AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C2550E23F26C6C00B6A3AD /* LaunchScreen.storyboard */; };
+		49C2551C23F2771A00B6A3AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49C2551B23F2771A00B6A3AD /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01E245F0606DAF19A149068E /* Pods-FDLSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDLSample.release.xcconfig"; path = "Target Support Files/Pods-FDLSample/Pods-FDLSample.release.xcconfig"; sourceTree = "<group>"; };
+		0C18A340FA469F2EDF19A804 /* Pods-FDLSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDLSample.debug.xcconfig"; path = "Target Support Files/Pods-FDLSample/Pods-FDLSample.debug.xcconfig"; sourceTree = "<group>"; };
 		49C2550023F26C6A00B6A3AD /* FDLSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FDLSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C2550323F26C6A00B6A3AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49C2550523F26C6A00B6A3AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,9 @@
 		49C2550C23F26C6C00B6A3AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49C2550F23F26C6C00B6A3AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49C2551123F26C6C00B6A3AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49C2551723F274DE00B6A3AD /* FDLSampleDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FDLSampleDebug.entitlements; sourceTree = "<group>"; };
+		49C2551B23F2771A00B6A3AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6852102D37BFD9DBEF7B158C /* Pods_FDLSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FDLSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				448CE5EA09339FAA15FCB838 /* Pods_FDLSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +50,8 @@
 			children = (
 				49C2550223F26C6A00B6A3AD /* FDLSample */,
 				49C2550123F26C6A00B6A3AD /* Products */,
+				4F0E7922A570C7A6C1A00D9C /* Pods */,
+				D107D5010462D7B161EC9D4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +66,8 @@
 		49C2550223F26C6A00B6A3AD /* FDLSample */ = {
 			isa = PBXGroup;
 			children = (
+				49C2551823F2759100B6A3AD /* Firebase */,
+				49C2551723F274DE00B6A3AD /* FDLSampleDebug.entitlements */,
 				49C2550323F26C6A00B6A3AD /* AppDelegate.swift */,
 				49C2550523F26C6A00B6A3AD /* SceneDelegate.swift */,
 				49C2550723F26C6A00B6A3AD /* ViewController.swift */,
@@ -67,6 +79,31 @@
 			path = FDLSample;
 			sourceTree = "<group>";
 		};
+		49C2551823F2759100B6A3AD /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				49C2551B23F2771A00B6A3AD /* GoogleService-Info.plist */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		4F0E7922A570C7A6C1A00D9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C18A340FA469F2EDF19A804 /* Pods-FDLSample.debug.xcconfig */,
+				01E245F0606DAF19A149068E /* Pods-FDLSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D107D5010462D7B161EC9D4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6852102D37BFD9DBEF7B158C /* Pods_FDLSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49C2551423F26C6C00B6A3AD /* Build configuration list for PBXNativeTarget "FDLSample" */;
 			buildPhases = (
+				86BD9C70B653D5472E0082A1 /* [CP] Check Pods Manifest.lock */,
 				49C254FC23F26C6A00B6A3AD /* Sources */,
 				49C254FD23F26C6A00B6A3AD /* Frameworks */,
 				49C254FE23F26C6A00B6A3AD /* Resources */,
+				89D1CA3D37C20EB9F1E67523 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +165,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				49C2551023F26C6C00B6A3AD /* LaunchScreen.storyboard in Resources */,
+				49C2551C23F2771A00B6A3AD /* GoogleService-Info.plist in Resources */,
 				49C2550D23F26C6C00B6A3AD /* Assets.xcassets in Resources */,
 				49C2550B23F26C6A00B6A3AD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86BD9C70B653D5472E0082A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FDLSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89D1CA3D37C20EB9F1E67523 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FDLSample/Pods-FDLSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FDLSample/Pods-FDLSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FDLSample/Pods-FDLSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		49C254FC23F26C6A00B6A3AD /* Sources */ = {
@@ -216,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,9 +364,12 @@
 		};
 		49C2551523F26C6C00B6A3AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C18A340FA469F2EDF19A804 /* Pods-FDLSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = FDLSample/FDLSampleDebug.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 67NJZVUMG3;
 				INFOPLIST_FILE = FDLSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -293,6 +378,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = branch10480.FDLSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "FDL Dev";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,9 +386,11 @@
 		};
 		49C2551623F26C6C00B6A3AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01E245F0606DAF19A149068E /* Pods-FDLSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 67NJZVUMG3;
 				INFOPLIST_FILE = FDLSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,6 +399,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = branch10480.FDLSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "FDL AppStore";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
